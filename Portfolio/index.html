@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---Head--->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Britny Ortega</title>
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background Video-->
+        <div id="Home">
+            <video autoplay muted loop id="Type_Video">
+                <source src="images/fingies.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Britny Ortega's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>To create a more diverse and inclusive tech world, we need to inspire and empower the next generation of female role models to 
+                        <br>pursue and develop their career in technology and become innovators, leaders and entrepreneurs.
+                        <br> It’s a process and it’s not always straightforward. It takes time, action and support. 
+                    </q>
+                    <br>
+                    <br> -Anna Radulovski, Founder & CEO at WomenTech Network
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="images/coding.jpg" alt="purple light desk">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    Hi, my name is Britny. Welcome to my portfolio. I am a software developer who loves to create. I am a graduate of <a href="http://learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programing languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your next project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding project on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/bortega90" target="_blank">Britny Ortega's Github</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href="https://github.com/bortega90" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo" width="400" height="300"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/purplelightdesk.jpg" alt="computer desk">
+            </div>
+            <!--contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+            </div>
+            <!--This spcifices where and how to send the form data; we ar leaving it blank-->
+            <form action="https://formspree.io/f/mleykgng" method="POST"> <!--Here we are utilitizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute--> 
+                <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                    <input type="text" placeholder="Please enter your email here">
+                <label>Message:</label>
+                    <input type="text" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    
+
+     <!--footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+   </body>
+</html>
