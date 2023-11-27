@@ -17,6 +17,7 @@
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
             <a href="#Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -32,7 +33,7 @@
         
         <!--Video Text-->
         <div class="Video_Text">
-            <h1 class="white-text">Britny Ortega's Portfolio</h1>
+            <h1 class="white-text">Welcome to My Portfolio</h1>
             <strong>
                 <p class="center">
                     <q>To create a more diverse and inclusive tech world, we need to inspire and empower the next generation of female role models to 
@@ -72,7 +73,7 @@
             <div class="Column_1">
                 <h1>GitHub</h1>
                 <p>
-                    You can view my coding project on my GitHub profile here:
+                    You can view my coding projects on my GitHub profile here:
                     <br>
                     <p class="center"><a href="https://github.com/bortega90" target="_blank">Britny Ortega's Github</a></p>
                 </p>
@@ -91,28 +92,36 @@
             </div>
             <!--contact form, right column-->
             <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
+                <div id='Contact'>
+                    <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+                        <h1>Contact</h1>
+                        <div class="form-popup" id="myForm">
+                    
+                            <!--This spcifices where and how to send the form data; we ar leaving it blank-->
+                            <form action="https://formspree.io/f/mleykgng" method="POST" class="form-container"> <!--Here we are utilitizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute--> 
+                                <label for ='name'>Name:</label>
+                                    <input type="text" placeholder="Please enter your name ">
+                                <label for = 'email'>Email:</label>
+                                    <input type="text" placeholder="Please enter your email ">
+                                <label for="message">Message:</label>
+                                    <input type="text" placeholder="Please write your message ">
+                                
+                                <button type="submit" class="btn">Submit</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                     </div>
+                </div> 
             </div>
-            <!--This spcifices where and how to send the form data; we ar leaving it blank-->
-            <form action="https://formspree.io/f/mleykgng" method="POST"> <!--Here we are utilitizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute--> 
-                <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                    <input type="text" placeholder="Please enter your email here">
-                <label>Message:</label>
-                    <input type="text" placeholder="Please write your message here">
-                    <input type="submit" value="SUBMIT">
-            </form>
         </div>
-    </div>
     
 
      <!--footer section-->
         <footer>
             <p>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a></p>
+                <p class="center">&copy Created by Britny Ortega <a href="https://learncodinganywhere.com" target="_blank">Britny Ortega's Portfolio</a></p>
                 <br>
             </p>
         </footer>
+        <script src ="js/js.js"></script>
    </body>
 </html>
